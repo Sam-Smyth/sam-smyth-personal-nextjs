@@ -1,0 +1,35 @@
+body {
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--black);
+}
+
+h1 {
+  font-size: clamp(2rem, 1.438rem + 1.5vw, 2.75rem); // 44px @1400 - 32px @600
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 1.188rem + 1.5vw, 2.5rem); // 40px @1400 - 28px @600
+  font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.125rem + 1vw, 2rem); // 32px @1400 - 24px @600
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}

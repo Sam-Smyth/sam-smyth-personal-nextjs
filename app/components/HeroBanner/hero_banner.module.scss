@@ -1,0 +1,45 @@
+.triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(50% + 150px);
+  height: 31.25rem; // 500px
+  background: var(--black);
+  clip-path: polygon(100% 0, 100% 100%, 0% 0);
+}
+
+.hero_wrap {
+  margin-top: 9.375rem; // 150px
+  align-items: center;
+}
+
+.text_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  a {
+    align-self: flex-start;
+  }
+}
+
+.image {
+  position: relative;
+  visibility: hidden;
+}
+
+.hero_button {
+  position: relative;
+  overflow: hidden;
+  --home-button-translate: -120%;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--green);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: translateX(var(--home-button-translate)) skewX(-20deg);
+  }
+}

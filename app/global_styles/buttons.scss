@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  padding: 1rem 2.5rem; // 16px 40px
+  color: var(--green);
+  border: 2px solid var(--green);
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: 0.2s background-color, 0.2s color;
+
+  &:hover {
+    background-color: var(--green);
+    color: var(--white) !important;
+  }
+
+  &.button_header {
+    border-color: var(--white);
+    color: var(--white);
+    padding: 0.625rem 1.875rem; // 10px and 30px
+    transition: 0.2s background-color, 0.2s color, 0.3s border-color;
+
+    &:hover {
+      border-color: var(--green);
+      color: var(--white);
+      background-color: var(--green);
+    }
+  }
+}

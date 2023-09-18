@@ -1,0 +1,32 @@
+.header {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.563rem; // 25px
+}
+
+.main_nav {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem; // 32px
+  }
+}
+
+.nav_links {
+  font-size: clamp(0.875rem, 0.688rem + 0.5vw, 1.125rem);
+  color: var(--white);
+  transition: 0.2s color;
+
+  &:hover {
+    color: var(--green);
+  }
+}

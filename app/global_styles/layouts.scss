@@ -1,0 +1,25 @@
+main {
+  > * + * {
+    margin-top: clamp(3.125rem, -1.563rem + 12.5vw, 9.375rem); // 150px @1400 - 50px @600
+  }
+}
+
+.width_content {
+  max-width: var(--width-content);
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+}
+
+.width_half {
+  max-width: var(--half-width);
+}
+
+.width_half_narrow {
+  max-width: var(--half-width-narrow)
+}
+
+.space_between {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem; // 20px
+}
